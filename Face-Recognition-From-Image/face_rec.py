@@ -29,7 +29,6 @@ def detect_faces(impath):
 
 
 def show_result(img_tup):
-    print("Faces in image = {}".format(len(img_tup[1])))
     cv2.imshow('img', img_tup[0])
     # Window lasts for 30 seconds
     cv2.waitKey(1000 * 30)
