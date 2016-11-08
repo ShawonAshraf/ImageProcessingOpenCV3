@@ -1,7 +1,7 @@
 from face_rec import detect_faces, show_result
 
 
-images = ['images/im1.jpg', 'images/bm.jpg', 'images/rm.jpg']
+images = ['../images/im1.jpg', '../images/bm.jpg', '../images/rm.jpg']
 image = images[0]
 
 print("For image = {}".format(image))

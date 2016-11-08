@@ -9,7 +9,8 @@ def detect_faces(impath):
 
     scale_f = cv2.CASCADE_SCALE_IMAGE
 
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier(
+        '../classifiers/haarcascade_frontalface_default.xml')
 
     img = cv2.imread(impath)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -23,7 +24,7 @@ def detect_faces(impath):
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-    cv2.imwrite("out.jpg", img)
+    cv2.imwrite('../dump/out.jpg', img)
 
     return (img, faces)
 
