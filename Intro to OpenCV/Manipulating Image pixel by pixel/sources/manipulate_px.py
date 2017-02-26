@@ -1,19 +1,18 @@
 import numpy as np
 import cv2
 
-image = cv2.imread('../images/kids_field_bangladesh.jpg', cv2.IMREAD_UNCHANGED)
+image = cv2.imread('../images/kids_field_bangladesh.jpg', cv2.IMREAD_GRAYSCALE)
 print(image)
-
-threshold = np.amax(image)
+cv2.imshow('unaltered', image)
 
 for x in np.nditer(image, op_flags=['readwrite']):
-    if x >= threshold / 2:
+    if x >= 128:
         x[...] = 1
-    elif x < threshold / 2:
+    elif x < 128:
         x[...] = 0
 
-print(image)
 
+print(image)
 cv2.imshow('binary image', image)
 
 key = cv2.waitKey(0)
