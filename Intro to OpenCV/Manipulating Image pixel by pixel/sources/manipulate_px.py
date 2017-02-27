@@ -1,20 +1,20 @@
 import numpy as np
 import cv2
 
-image = cv2.imread('../images/kids_field_bangladesh.jpg', cv2.IMREAD_GRAYSCALE)
-print(image)
-cv2.imshow('unaltered', image)
+from matplotlib import pyplot
 
+image = cv2.imread('../images/kids_field_bangladesh.jpg', cv2.IMREAD_GRAYSCALE)
+
+thresh = 127
 for x in np.nditer(image, op_flags=['readwrite']):
-    if x >= 128:
+    if x >= thresh:
         x[...] = 1
-    elif x < 128:
+    elif x < thresh:
         x[...] = 0
 
+cv2.imshow('preview', image)
 
-print(image)
-cv2.imshow('binary image', image)
-
-key = cv2.waitKey(0)
-if key == 27 or ord('q'):
+k = cv2.waitKey(0)
+if k == 27 or ord('q'):
+    cv2.imwrite('../images/out.jpg', image)
     cv2.destroyAllWindows()
