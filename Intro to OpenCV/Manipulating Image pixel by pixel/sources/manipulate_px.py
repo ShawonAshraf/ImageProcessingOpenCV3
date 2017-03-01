@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 
 image = cv2.imread('../images/kids_field_bangladesh.jpg', cv2.IMREAD_UNCHANGED)
-print(image)
 
 threshold = np.amax(image)
 
