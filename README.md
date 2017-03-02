@@ -9,25 +9,25 @@
 ও দেখা যাবে। 
 
 ### যা যা লাগবে 
-- [ ] Anaconda 4.2.0 with Python3
-- [ ] OpenCV 3.1.0 menpo package from Anaconda cloud
-- [ ] Pycharm / Visual Studio with PTVS / VSCode / Atom or any other editor/IDE you prefer
-- [ ] বিস্তারিত 01 introduction, 02 setup and init এ বলা আছে 
+- [x] Anaconda 4.2.0 with Python3
+- [x] OpenCV 3.1.0 menpo package from Anaconda cloud
+- [x] Pycharm / Visual Studio with PTVS / VSCode / Atom or any other editor/IDE you prefer
+- [x] বিস্তারিত 01 introduction, 02 setup and init এ বলা আছে 
 
 ### কোড কীভাবে চালাতে হবে? 
 
-- [ ] প্রথমে এই রিপোজিটরি ক্লোন করবেন বা ডাউনলোড করে নিবেন।
-- [ ] এরপর  Image Processing with OpenCV ডিরেক্টরিতে কমান্ড লাইন ওপেন করাবেন । 
+- [x] প্রথমে এই রিপোজিটরি ক্লোন করবেন বা ডাউনলোড করে নিবেন।
+- [x] এরপর  Image Processing with OpenCV ডিরেক্টরিতে কমান্ড লাইন ওপেন করাবেন । 
     - Windows হলে Command Prompt / Powershell (ফোল্ডারে রাইট ক্লিক করলেই অপশন আসবে)
     - macOS/ Linux Distro হলে Terminal/Konsole
 
-- [ ] এরপর কমান্ড লাইনে লিখবেন `jupyter notebook` । এন্টার / রিটার্ন কি চাপলে আইপাইথন নোটবুক সার্ভার অন
+- [x] এরপর কমান্ড লাইনে লিখবেন `jupyter notebook` । এন্টার / রিটার্ন কি চাপলে আইপাইথন নোটবুক সার্ভার অন
      হবে, আর আপনার ডিফল্ট ওয়েব ব্রাউজারে পুরো প্রোজেক্ট ওপেন হবে । তখন অধ্যায় অনুযায়ী পড়ে নিতে পারবেন। আর ক্লোন করতে 
      না চাইলে অনলাইনে এই রিপোজিটরি তো আছেই!  
 
 ### অনলাইনে দেখতে হলে 
-- [ ]  এই রিপোজিটরিতে [Image Processing with OpenCV](Image Processing with OpenCV) ডিরেক্টরি টা ওপেন করলে ফোল্ডার অনুযায়ী নোটবুক গুলো পেয়ে যাবেন।
-- [ ] এরপর সেগুলো ওয়েব ব্রাউজারে ওপেন করলেই হবে। 
+- [x]  এই রিপোজিটরিতে [Image Processing with OpenCV](Image Processing with OpenCV) ডিরেক্টরি টা ওপেন করলে ফোল্ডার অনুযায়ী নোটবুক গুলো পেয়ে যাবেন।
+- [x] এরপর সেগুলো ওয়েব ব্রাউজারে ওপেন করলেই হবে। 
 
 
 # কন্ট্রিবিউশন 
