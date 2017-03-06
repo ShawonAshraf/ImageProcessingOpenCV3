@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+from matplotlib import pyplot as plt
 
 image = cv2.imread('../images/kids_field_bangladesh.jpg', cv2.IMREAD_GRAYSCALE)
 
@@ -10,9 +11,6 @@ for x in np.nditer(image, op_flags=['readwrite']):
     elif x < thresh:
         x[...] = 0
 
-cv2.imshow('binary image', image)
 
-key = cv2.waitKey(0)
-if key == 27 or ord('q'):
-    cv2.imwrite('../images/out.jpg', image)
-    cv2.destroyAllWindows()
+plt.imshow(image, cmap='gray')
+plt.show()
