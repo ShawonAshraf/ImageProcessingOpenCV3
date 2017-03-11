@@ -1,5 +1,6 @@
 import numpy
 import cv2
+from matplotlib import pyplot as plt
 
 
 def detect_faces(impath):
@@ -30,7 +31,7 @@ def detect_faces(impath):
 
 
 def show_result(img_tup):
-    cv2.imshow('img', img_tup[0])
-    # Window lasts for 30 seconds
-    cv2.waitKey(1000 * 30)
-    cv2.destroyAllWindows()
+    cv2.imshow('Detected Faces', img_tup[0])
+    k = cv2.waitKey(0)
+    if k == 27 or k == ord('q'):
+        cv2.destroyAllWindows()
